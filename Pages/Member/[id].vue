@@ -162,6 +162,34 @@ margin-left: 40px;
 @media screen and (max-width:768px) {
     .memberProfile {
         flex-direction: column;
+        padding: 0 60px;
+        margin: auto;
     }
+    .memberProfile img{
+        margin: auto;
+    }
+    .profileText  {
+    width: 520px;
+    margin: 50px auto;
+    /* margin-top: 50px; */
+    text-align: center;
+    }
+    .profileText .name {
+    font-size: 30px;
+    font-weight: bold;
+}
+    .profileText dt {
+    float: left;
+    clear: left ;
+    /* margin-left: 70px;
+    margin-right: 0.5em ; */
+    padding-top: 30px;
+    margin: 0 auto;
+}
+.profileText dd {
+    /* margin-left: 100px ; */
+    /* margin-top: 5px; */
+    margin: auto;
+}
 }
 </style>
