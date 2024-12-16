@@ -159,18 +159,21 @@ margin-left: 40px;
 .careerText {
     margin-left: 80px;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:920px) {
+/* プロフィール */
     .memberProfile {
         flex-direction: column;
-        padding: 0 60px;
+        padding: 0 20px;
         margin: auto;
     }
     .memberProfile img{
+        max-width: 400px;
+        height: 100%;
         margin: auto;
     }
     .profileText  {
-    width: 520px;
-    margin: 50px auto;
+    width: 350px;
+    margin: 40px auto;
     /* margin-top: 50px; */
     text-align: center;
     }
@@ -187,9 +190,37 @@ margin-left: 40px;
     margin: 0 auto;
 }
 .profileText dd {
-    /* margin-left: 100px ; */
-    /* margin-top: 5px; */
+    padding-top: 5px;
     margin: auto;
 }
+/* サムネ */
+.thumbnail img {
+    max-width: 700px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
 }
+/* 経歴 */
+.roudokuWorks {
+    /* margin-left: 20px; */
+    margin-right: 80px;
+}
+.careerText {
+    /* margin-left: 80px; */
+    margin-right: 80px;
+}
+}
+
+@media screen and (max-width:1020px) {
+    /* 朗読むすめでの活動・お仕事 */
+.bookList {
+    flex-wrap: wrap;
+    margin: 50px;
+    text-align: center;
+}
+.bookimg  {
+margin-left: 40px;
+}
+}
+
 </style>

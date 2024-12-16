@@ -81,6 +81,7 @@ section a{
       margin: auto;
    }
 }
+
 @media screen and (max-width:1020px){
    .fullMember {
    padding:  0 10px;
