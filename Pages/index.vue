@@ -5,7 +5,7 @@
             <!-- メイン（about） -->
             <main>
                 <h2 class="title">About</h2>
-                <p>「朗読むすめ」は、教育・歴史・古典を中心とした朗読ユニットです。<br>
+                <p class="index_mainp">「朗読むすめ」は、教育・歴史・古典を中心とした朗読ユニットです。<br>
                     300名近いオーディションから選ばれました。<br>2021年11月3日に結成。<br><br>
                     オーディオブック、書籍の付属音声、物語の読み聞かせなど
                     <br>「声」で勝負する朗読ユニットです。<br>
@@ -41,8 +41,7 @@
                     <li><img src="/images/kyoututest2024.jpg" alt="共通テスト2024"></li>
                   </ul>
                 </div>
-                <p>担当するのは書籍付属音声にとどまらず、PR動画＆音声、書店に設置するPOPやQRコードの作成、<br>
-                    さらにはキャラクターボイスやオーディオブックなど様々です。</p>
+                <p class="index_mainp">担当するのは書籍付属音声にとどまらず、PR動画＆音声、書店に設置するPOPやQRコードの作成、<br> さらにはキャラクターボイスやオーディオブックなど様々です。</p>
             </main>
             <!-- セクション（SNS） -->
             <section>
@@ -108,7 +107,6 @@ main {
     position: relative;  
     width: 100%;
     overflow: hidden;
-
 }
 main p {
     text-align: center;
@@ -206,7 +204,7 @@ h3 a {
     color: #000;
 }
 @media screen and (max-width:768px) {
-    main p {
+    .index_mainp {
         padding-right: 20px;
         padding-left: 20px;
     }

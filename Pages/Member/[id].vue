@@ -76,13 +76,7 @@ main {
     background-color: #f4e7d4;
     height: fit-content;
 }
-.title {
-    color: #d45d5d;
-    text-align: center;
-    margin: 0;
-    padding-top: 40px;
-    margin-bottom: 10px;
-}
+
 .memberProfile {
     display: flex;
     margin-top: 3%;
@@ -118,7 +112,6 @@ main {
 .youtube__box {
     max-width: 700px;
     margin: auto;
-    aspect-ratio: 16 / 9;
 }
 .thumbnail{
     /* width: 700px; */
@@ -128,6 +121,11 @@ main {
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.thumbnail * {
+    max-width: 700px;
+    width: 100%;
+    height: 100%;
 }
 /* 朗読むすめでの活動・お仕事 */
 .roudokujob {
@@ -167,25 +165,23 @@ margin-left: 40px;
         margin: auto;
     }
     .memberProfile img{
-        max-width: 400px;
+        width: 85%;
         height: 100%;
         margin: auto;
+        margin-top: 20px;
     }
     .profileText  {
     width: 350px;
     margin: 40px auto;
-    /* margin-top: 50px; */
     text-align: center;
     }
     .profileText .name {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
     .profileText dt {
     float: left;
     clear: left ;
-    /* margin-left: 70px;
-    margin-right: 0.5em ; */
     padding-top: 30px;
     margin: 0 auto;
 }
@@ -202,12 +198,12 @@ margin-left: 40px;
 }
 /* 経歴 */
 .roudokuWorks {
-    /* margin-left: 20px; */
-    margin-right: 80px;
+    margin: auto;
+    padding: 0 30px;
 }
 .careerText {
-    /* margin-left: 80px; */
-    margin-right: 80px;
+    margin: auto;
+    padding: 0 30px;
 }
 }
 
@@ -215,12 +211,18 @@ margin-left: 40px;
     /* 朗読むすめでの活動・お仕事 */
 .bookList {
     flex-wrap: wrap;
-    margin: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
     text-align: center;
 }
-.bookimg  {
-margin-left: 40px;
+.roudokujob h4 {
+    margin-top: 20px;
 }
+.bookimg  {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
 }
 
 </style>
