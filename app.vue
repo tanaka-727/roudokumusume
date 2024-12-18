@@ -1,9 +1,9 @@
 <template>
-  <PageHeader/>
+  <PageHeader />
   <div>
-    <NuxtPage/>
+    <NuxtPage />
   </div>
-  <PageFooter/>
+  <PageFooter />
 </template>
 
 <style>
