@@ -32,8 +32,9 @@
 /* コンタクト */
 .contact {
 background-color:   #fffbef;
-height: 285px;
+height: fit-content;
 text-align: center;
+padding-bottom: 30px;
 }
 .contact p {
     margin-top: 20px;
@@ -63,6 +64,9 @@ text-align: center;
 @media screen and (max-width:768px) {
     .title {
     padding-top: 20px;
-}
+    }
+    .contact {
+    padding-bottom: 15px;
+    }
 }
 </style>

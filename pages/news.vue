@@ -382,13 +382,17 @@ news一覧
         padding-top: 70px;
     }
     main p {
-        padding: 20px;
+        padding: 30px;
     }
     .br {
         display: block;
     }
     .newsList2024, .newsList2023, .newsList2022, .newsList2021 {
     padding-top: 25px;
+    }
+    .picup p {
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .picup dt {
         margin-left: 30px;

@@ -164,15 +164,11 @@ section {
     margin-bottom: 10px;
 }
 .youtube__box {
-    /* position: relative; */
     max-width: 560px;
     margin: auto;
     aspect-ratio: 16 / 9;
 }
 .youtube__box iframe {
-    /* position: absolute;
-    top: 0;
-    left: 0; */
     width: 100%;
     height: 100%;
 }
@@ -220,6 +216,9 @@ h3 a {
     }
     main p {
     text-align: left;
+    }
+    .icon {
+        text-align: center;
     }
 }
 @media screen and (max-width:992px) {
