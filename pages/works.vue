@@ -139,6 +139,9 @@ main {
     margin-left: 20%;
 }
 @media screen and (max-width:768px),print {
+    main {
+        padding-top: 70px;
+    }
     main p {
         padding: 20px;
     }

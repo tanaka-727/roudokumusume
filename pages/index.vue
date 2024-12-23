@@ -205,6 +205,9 @@ h3 a {
     color: #000;
 }
 @media screen and (max-width:768px) {
+    .topimage {
+        padding-top: 70px;
+    }
     .index_mainp {
         padding-right: 20px;
         padding-left: 20px;
@@ -214,7 +217,10 @@ h3 a {
     }
     .title {
     padding-top: 20px;
-}
+    }
+    main p {
+    text-align: left;
+    }
 }
 @media screen and (max-width:992px) {
     .minikanaya {

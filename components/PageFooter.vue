@@ -60,4 +60,9 @@ text-align: center;
     margin: 0;
     padding-top: 40px;
 }
+@media screen and (max-width:768px) {
+    .title {
+    padding-top: 20px;
+}
+}
 </style>

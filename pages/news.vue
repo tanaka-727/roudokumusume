@@ -49,7 +49,7 @@
                     <dd><a href="#youtube27">「本家本元！日本史一問一答」全27巻 公開（2024年11月現在、160万回再生突破！）</a></dd>
                 </dl>
             </div>
-            <div class="news2022">
+            <div class="news2021">
                 <h3><a href=#news2021>～2021年～</a></h3>
                 <dl>
                     <dt>◆2021年11月20日</dt>
@@ -378,11 +378,27 @@ news一覧
     margin-left: 30px;
 }
 @media screen and (max-width:768px) {
+    main {
+        padding-top: 70px;
+    }
     main p {
         padding: 20px;
     }
     .br {
         display: block;
+    }
+    .newsList2024, .newsList2023, .newsList2022, .newsList2021 {
+    padding-top: 25px;
+    }
+    .picup dt {
+        margin-left: 30px;
+        float: none
+    }
+    .picup dd {
+        float:none;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 87%;
     }
 }
 @media screen and (max-width:992px) {  

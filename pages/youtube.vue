@@ -233,9 +233,23 @@ main {
   height: 100%;
 } */
 @media screen and (max-width:768px) {
+  main {
+    padding-top: 70px;
+  }
     .aboutlist ul {
     padding-left: 35%;
-}
+  }
+  .YouTubeContents{
+    margin-top: 30px;
+  }
+  .YouTubeitem {
+    flex-direction: column;
+    /* margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #fffbef;
+    height: fit-content; */
+  }
 }
 @media screen and (max-width:992px) {
    main p {
@@ -248,7 +262,6 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     height: fit-content;
-  
   }
   .YouTubeitem iframe {
     margin: 10px;

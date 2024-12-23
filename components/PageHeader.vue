@@ -73,8 +73,16 @@ nav ul li:has(a .logo){
     padding: 0;
 }
 @media screen and (max-width:768px),print {
+    .logo {
+    width: 70px;
+    height: 70px;
+    }
+    nav ul {
+    height: 70px;
+}
     nav ul li {
-        padding-top: 5px;
+        width: calc((92.5vw - 70px) /5);
+        padding-top: 2px;
         font-size: 12px;
     }
     .icon {

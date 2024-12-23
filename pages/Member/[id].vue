@@ -162,6 +162,11 @@ margin-left: 40px;
 .careerText {
     margin-left: 80px;
 }
+@media screen and (max-width:768px) {
+    main {
+        padding-top: 70px;
+    }
+}
 @media screen and (max-width:920px) {
 /* プロフィール */
     .memberProfile {
