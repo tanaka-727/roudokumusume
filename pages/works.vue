@@ -141,6 +141,7 @@ main {
 @media screen and (max-width:768px),print {
     main {
         padding-top: 70px;
+        padding-bottom: 15px;
     }
     main p {
         padding: 20px;
