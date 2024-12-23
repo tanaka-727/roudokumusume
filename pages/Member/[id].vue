@@ -76,7 +76,12 @@ main {
     background-color: #f4e7d4;
     height: fit-content;
 }
-
+.title {
+    color: #d45d5d;
+    text-align: center;
+    margin: 0;
+    padding-top: 40px;
+}
 .memberProfile {
     display: flex;
     margin-top: 3%;

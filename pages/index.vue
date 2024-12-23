@@ -212,6 +212,9 @@ h3 a {
     .YouTube{
         flex-direction: column;
     }
+    .title {
+    padding-top: 20px;
+}
 }
 @media screen and (max-width:992px) {
     .minikanaya {
