@@ -77,7 +77,7 @@
      </div>
 
       <div class="supportmemberList">
-      <h2 class="title">サポートメンバー紹介</h2>
+      <h2 class="title">サポートメンバー</h2>
         <div class="supportmemberflex">
             <img src="/images/watatsumi.jpg" alt="綿津海うた" class="supportmember">
             <img src="/images/okamura.jpg" alt="岡村" class="supportmember">
