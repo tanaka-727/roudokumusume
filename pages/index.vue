@@ -217,8 +217,11 @@ h3 a {
     main p {
     text-align: left;
     }
-    .icon {
+    /* .iconlist .icon {
         text-align: center;
+    } */
+    .YouTube p {
+        margin-left: 0;
     }
 }
 @media screen and (max-width:992px) {

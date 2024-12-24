@@ -113,6 +113,7 @@ main {
 .works {
     background-color: #fffbef;
     height: fit-content;
+    padding: 20px;
 }
 .works img {
     height: 200px;
@@ -125,9 +126,6 @@ main {
 .works .online {
     height: 170px;
     width: 150px;
-}
-.works {
-    padding: 20px;
 }
 .worktext {
     margin-left: 30px;

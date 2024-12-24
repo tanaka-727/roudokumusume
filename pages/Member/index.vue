@@ -8,51 +8,149 @@
         また、「教育系朗読ユニット」の名にふさわしい才色兼備なメンバーが揃っています。<br><br>
 
         アナウンサー、声優、ラジオパーソナリティ、役者、日本語教師、ナレーター、アイドル <br>
-        元スポーツキャスター、高校教師、MC、大学講師など様々な場面で活躍。<br>
+        元スポーツキャスター、高校教師、MC、大学講師…など様々な場面で活躍。<br>
         個性あふれるメンバーを、是非ひとりひとりチェックしてみてくださいね。
-      </p>
+         </p>
     </main>
-    <section class="fullMember">
-         <div v-for="member of data.contents" :style="`background-color: ${member.memberColor}; border:10px solid ${member.memberColor}; border-radius:25% 10%;`" class="member__link">
-            <nuxt-link :to="`/member/${member.id}`">
+      <div class="fullMember">
+         <section class="announcerList">
+            <h3 class="category">アナウンサー</h3>
+            <div class="announcerMember">
+               <div v-for="member of announcer" :style="`background-color: ${member.memberColor}; border:10px solid ${member.memberColor}; border-radius:25% 10%;`" class="member__link">
+               <nuxt-link :to="`/member/${member.id}`">
                <img :src="member.bustupPhoto.url" alt="" srcset="">
                <h3 class="text">{{ member.name }}</h3>
                <div v-html="member.job" class="text"></div>
-          </nuxt-link>
+               </nuxt-link>
+               <audio controls src="/voice/tanabe_voice.mp3"></audio>
+               </div>
+            </div>
+         </section>
+
+         <section class="joutyuunarratorList">
+            <h3 class="category">常駐ナレーター</h3>
+
+            <h4>元気系Voice</h4>
+            <div class="fineMember">
+               <div v-for="member of fine" :style="`background-color: ${member.memberColor}; border:10px solid ${member.memberColor}; border-radius:25% 10%;`" class="member__link">
+               <nuxt-link :to="`/member/${member.id}`">
+                  <img :src="member.bustupPhoto.url" alt="" srcset="">
+                  <h3 class="text">{{ member.name }}</h3>
+                  <div v-html="member.job" class="text"></div>
+               </nuxt-link>
+            </div>
+            </div>
+
+            <h4>かわいい系Voice</h4>
+            <div class="cuteMember">
+               <div v-for="member of cute" :style="`background-color: ${member.memberColor}; border:10px solid ${member.memberColor}; border-radius:25% 10%;`" class="member__link">
+               <nuxt-link :to="`/member/${member.id}`">
+               <img :src="member.bustupPhoto.url" alt="" srcset="">
+               <h3 class="text">{{ member.name }}</h3>
+               <div v-html="member.job" class="text"></div>
+               </nuxt-link>
+             </div>
+            </div>
+
+            <h4>落ち着き系Voice</h4>
+            <div class="coolMember">
+               <div v-for="member of cool" :style="`background-color: ${member.memberColor}; border:10px solid ${member.memberColor}; border-radius:25% 10%;`" class="member__link">
+               <nuxt-link :to="`/member/${member.id}`">
+               <img :src="member.bustupPhoto.url" alt="" srcset="">
+               <h3 class="text">{{ member.name }}</h3>
+               <div v-html="member.job" class="text"></div>
+               </nuxt-link>
+            </div>
+            </div>
+
+            <h4>癒し系Voice</h4>
+            <div class="healingMember">
+               <div v-for="member of healing" :style="`background-color: ${member.memberColor}; border:10px solid ${member.memberColor}; border-radius:25% 10%;`" class="member__link">
+               <nuxt-link :to="`/member/${member.id}`">
+               <img :src="member.bustupPhoto.url" alt="" srcset="">
+               <h3 class="text">{{ member.name }}</h3>
+               <div v-html="member.job" class="text"></div>
+               </nuxt-link>
+               </div>
+            </div>
+         </section>
+     </div>
+
+      <div class="supportmemberList">
+      <h2 class="title">サポートメンバー紹介</h2>
+        <div class="supportmemberflex">
+            <img src="/images/watatsumi.jpg" alt="綿津海うた" class="supportmember">
+            <img src="/images/okamura.jpg" alt="岡村" class="supportmember">
+            <img src="/images/nakayama.jpg" alt="中山" class="supportmember">
          </div>
-         <!-- {{ data.contents}} -->
-      </section>
- </div>
+      </div>
+   </div>
 </template>
 
 <script setup lang="ts">
 const runtimeConfig = useRuntimeConfig();
 
-const { data } = await useFetch(`https://${runtimeConfig.public.serviceDomain}.microcms.io/api/v1/member?limit=100&orders=createdAt`,{
+const { data } = await useFetch(`https://${runtimeConfig.public.serviceDomain}.microcms.io/api/v1/member?limit=100`,{
 headers: {'X-MICROCMS-API-KEY':runtimeConfig.public.apiKey}}
 )
 
-// console.log(data)
+console.log(data)
+console.log(data.value.contents[0].category[0])
+const announcer = data.value.contents.filter(content => content.category[0] == "アナウンサー");
+const fine = data.value.contents.filter(content => content.category[0] == "元気系");
+const cute = data.value.contents.filter(content => content.category[0] == "かわいい系");
+const cool = data.value.contents.filter(content => content.category[0] == "落ち着き系");
+const healing = data.value.contents.filter(content => content.category[0] == "癒し系");
 </script>
 
 <style scoped>
 .about {
    padding-top: 80px;
+   padding-bottom: 20;
    height: fit-content;
    background-color: #f4e7d4;
 }
 .fullMember {
-   padding:  0 63px;
-   height: fit-content;
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
-   gap: 30px;
-   padding-bottom: 20px;
+   background-color: red;
 }
-.fullMember img{
-   width: 250px;
+ .announcerMember, .fineMember, .cuteMember, .coolMember, .healingMember {
+   display: flex;
+   gap: 30px;
+   padding: 0 30px;
+   padding-bottom: 30px;
+   /* background-color: #fffbef; */
+ }
+ .member__link {
+   width: calc(100% / 3);
+ }
+ .cuteMember .member__link {
+   width: calc((100% - 120px) / 3);
+ }
+ /* 写真 */
+.announcerList img {
+   width: 100%;
+   background-color: white;
+   border-radius: 30% 10%;
+}
+.joutyuunarratorList img {
+   width: 100%;
    background-color: white;
    border-radius: 25% 10%;
+}
+/* テキスト */
+.category {
+   padding: 30px 0;
+   text-align: center;
+   color: #d45d5d;
+   font-size: 23px;
+   /* background-color: #fffbef; */
+}
+h4 {
+   padding-top: 20px;
+   padding-bottom: 10px;
+   padding-left: 60px;
+   /* background-color: #fffbef; */
+   font-size: 20px;
 }
 .text {
    color: #000;
@@ -61,14 +159,51 @@ headers: {'X-MICROCMS-API-KEY':runtimeConfig.public.apiKey}}
 section a{
    text-decoration: none;
 }
+/* ボイス */
+audio {
+   padding-top: 5px;
+   width: 93%;
+}
+/* サポートメンバー */
+.supportmemberList {
+   background-color: #f4e7d4;
+   padding: 0 20px;
+   padding-bottom: 30px;
+}
+.supportmemberflex {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+.supportmember {
+   width: calc((100% - 10px) / 2);
+   height: auto;
+   padding-top: 20px;
+}
 @media screen and (max-width:768px),print {
    .about {
       padding-top: 70px;
+      padding-bottom: 0;
    }
    main p {
       padding: 20px;
     }
-    .fullMember {
+   .announcerMember, .fineMember, .cuteMember, .coolMember, .healingMember {
+      flex-direction: column;
+   }
+   .member__link {
+      width: 80%;
+      margin: auto;
+   }
+    .cuteMember .member__link {
+   width: calc((100% - 90px));
+ }
+   .announcerList img {
+   width:100%;
+   background-color: white;
+   border-radius: 30% 10%;
+  }
+    /* .fullMember {
    padding:  0 10px;
    height: fit-content;
    display: grid;
@@ -83,20 +218,26 @@ section a{
 }
    .member__link{
       margin: auto;
-   }
-}
+   } */
 
-@media screen and (max-width:1020px){
-   .fullMember {
-   padding:  0 10px;
-   height: fit-content;
-   display: grid;
-   grid-template-columns: repeat(2,1fr);
-   gap: 20px;
-   padding-bottom: 20px;
+   /* テキスト */
+   .category {
+   padding: 15px 0;
+   /* background-color: #fffbef; */
    }
-   .member__link{
-      margin: auto;
+   /* ボイス */
+   audio {
+   padding-top: 10px;
+   width: 85%;
+   padding-left: 10px;
    }
+
+   /* サポートメンバー */
+    .supportmemberflex {
+      flex-direction: column;
+    }
+    .supportmember {
+      width: 100%;
+    }
 }
 </style>
