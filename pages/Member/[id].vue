@@ -166,6 +166,11 @@ margin-left: 40px;
     main {
         padding-top: 70px;
     }
+    .profileText dd {
+    padding-left: 100px ;
+    margin-top: 5px;
+    text-align: left;
+}
 }
 @media screen and (max-width:920px) {
 /* プロフィール */

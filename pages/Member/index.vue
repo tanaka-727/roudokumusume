@@ -110,15 +110,15 @@ const healing = data.value.contents.filter(content => content.category[0] == "�
    height: fit-content;
    background-color: #f4e7d4;
 }
-.fullMember {
+/* .fullMember {
    background-color: red;
-}
+} */
  .announcerMember, .fineMember, .cuteMember, .coolMember, .healingMember {
    display: flex;
    gap: 30px;
    padding: 0 30px;
    padding-bottom: 30px;
-   /* background-color: #fffbef; */
+   background-color: #fffbef;
  }
  .member__link {
    width: calc(100% / 3);
@@ -143,13 +143,13 @@ const healing = data.value.contents.filter(content => content.category[0] == "�
    text-align: center;
    color: #d45d5d;
    font-size: 23px;
-   /* background-color: #fffbef; */
+   background-color: #fffbef;
 }
 h4 {
    padding-top: 20px;
    padding-bottom: 10px;
    padding-left: 60px;
-   /* background-color: #fffbef; */
+   background-color: #fffbef;
    font-size: 20px;
 }
 .text {
@@ -189,15 +189,22 @@ audio {
       padding: 20px;
     }
    .announcerMember, .fineMember, .cuteMember, .coolMember, .healingMember {
-      flex-direction: column;
+      /* flex-direction: column; */
+      flex-wrap: wrap;
    }
-   .member__link {
+   /* .member__link {
       width: 80%;
       margin: auto;
+   } */
+   .member__link {
+      width: calc(100% / 2);
    }
     .cuteMember .member__link {
    width: calc((100% - 90px));
  }
+ /* .cuteMember .member__link {
+   width: calc((100% - 120px) / 2);
+ } */
    .announcerList img {
    width:100%;
    background-color: white;
@@ -216,10 +223,6 @@ audio {
    background-color: white;
    border-radius: 25% 10%;
 }
-   .member__link{
-      margin: auto;
-   } */
-
    /* テキスト */
    .category {
    padding: 15px 0;
