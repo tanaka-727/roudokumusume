@@ -22,7 +22,7 @@
                <h3 class="text">{{ member.name }}</h3>
                <div v-html="member.job" class="text"></div>
                </nuxt-link>
-               <audio controls src="/voice/tanabe_voice.mp3"></audio>
+               <audio controls :src="member.voiceSample"></audio>
                </div>
             </div>
          </section>
@@ -37,19 +37,9 @@
                   <img :src="member.bustupPhoto.url" alt="" srcset="">
                   <h3 class="text">{{ member.name }}</h3>
                   <div v-html="member.job" class="text"></div>
+                  <audio controls :src="member.voiceSample"></audio>
                </nuxt-link>
             </div>
-            </div>
-
-            <h4>かわいい系Voice</h4>
-            <div class="cuteMember">
-               <div v-for="member of cute" :style="`background-color: ${member.memberColor}; border:10px solid ${member.memberColor}; border-radius:25% 10%;`" class="member__link">
-               <nuxt-link :to="`/member/${member.id}`">
-               <img :src="member.bustupPhoto.url" alt="" srcset="">
-               <h3 class="text">{{ member.name }}</h3>
-               <div v-html="member.job" class="text"></div>
-               </nuxt-link>
-             </div>
             </div>
 
             <h4>落ち着き系Voice</h4>
@@ -59,8 +49,9 @@
                <img :src="member.bustupPhoto.url" alt="" srcset="">
                <h3 class="text">{{ member.name }}</h3>
                <div v-html="member.job" class="text"></div>
+               <audio controls :src="member.voiceSample"></audio>
                </nuxt-link>
-            </div>
+               </div>
             </div>
 
             <h4>癒し系Voice</h4>
@@ -70,9 +61,23 @@
                <img :src="member.bustupPhoto.url" alt="" srcset="">
                <h3 class="text">{{ member.name }}</h3>
                <div v-html="member.job" class="text"></div>
+               <audio controls :src="member.voiceSample"></audio>
                </nuxt-link>
                </div>
             </div>
+
+            <h4>かわいい系Voice</h4>
+            <div class="cuteMember">
+               <div v-for="member of cute" :style="`background-color: ${member.memberColor}; border:10px solid ${member.memberColor}; border-radius:25% 10%;`" class="member__link">
+               <nuxt-link :to="`/member/${member.id}`">
+               <img :src="member.bustupPhoto.url" alt="" srcset="">
+               <h3 class="text">{{ member.name }}</h3>
+               <div v-html="member.job" class="text"></div>
+               <audio controls :src="member.voiceSample"></audio>
+               </nuxt-link>
+             </div>
+            </div>
+
          </section>
      </div>
 
@@ -110,15 +115,14 @@ const healing = data.value.contents.filter(content => content.category[0] == "�
    height: fit-content;
    background-color: #f4e7d4;
 }
-/* .fullMember {
-   background-color: red;
-} */
+.fullMember section {
+   background-color: #fffbef;
+}
  .announcerMember, .fineMember, .cuteMember, .coolMember, .healingMember {
    display: flex;
    gap: 30px;
    padding: 0 30px;
    padding-bottom: 30px;
-   background-color: #fffbef;
  }
  .member__link {
    width: calc(100% / 3);
@@ -135,7 +139,7 @@ const healing = data.value.contents.filter(content => content.category[0] == "�
 .joutyuunarratorList img {
    width: 100%;
    background-color: white;
-   border-radius: 25% 10%;
+   border-radius: 30% 10%;
 }
 /* テキスト */
 .category {
@@ -143,13 +147,11 @@ const healing = data.value.contents.filter(content => content.category[0] == "�
    text-align: center;
    color: #d45d5d;
    font-size: 23px;
-   background-color: #fffbef;
 }
 h4 {
    padding-top: 20px;
    padding-bottom: 10px;
    padding-left: 60px;
-   background-color: #fffbef;
    font-size: 20px;
 }
 .text {
@@ -178,7 +180,8 @@ audio {
 .supportmember {
    width: calc((100% - 10px) / 2);
    height: auto;
-   padding-top: 20px;
+   margin-top: 20px;
+   border-radius: 25px;
 }
 @media screen and (max-width:768px),print {
    .about {
@@ -189,44 +192,24 @@ audio {
       padding: 20px;
     }
    .announcerMember, .fineMember, .cuteMember, .coolMember, .healingMember {
-      /* flex-direction: column; */
       flex-wrap: wrap;
    }
-   /* .member__link {
-      width: 80%;
-      margin: auto;
-   } */
    .member__link {
-      width: calc(100% / 2);
+      width: calc(80% / 2);
+      margin: auto;
    }
-    .cuteMember .member__link {
-   width: calc((100% - 90px));
- }
- /* .cuteMember .member__link {
-   width: calc((100% - 120px) / 2);
- } */
+   .cuteMember .member__link {
+      width: calc(80% / 2);
+      margin: auto;
+   }
    .announcerList img {
    width:100%;
    background-color: white;
    border-radius: 30% 10%;
-  }
-    /* .fullMember {
-   padding:  0 10px;
-   height: fit-content;
-   display: grid;
-   grid-template-columns: repeat(1,1fr);
-   gap: 20px;
-   padding-bottom: 10px;
    }
-   .fullMember img{
-   width: 250px;
-   background-color: white;
-   border-radius: 25% 10%;
-}
    /* テキスト */
    .category {
    padding: 15px 0;
-   /* background-color: #fffbef; */
    }
    /* ボイス */
    audio {
@@ -242,5 +225,17 @@ audio {
     .supportmember {
       width: 100%;
     }
+}
+@media screen and (max-width:545px),print {
+   .announcerMember, .fineMember, .cuteMember, .coolMember, .healingMember {
+      flex-direction: column;
+   }
+   .member__link {
+      width: 80%;
+      margin: auto;
+   }
+     .cuteMember .member__link {
+   width: calc((100% - 90px));
+   }
 }
 </style>

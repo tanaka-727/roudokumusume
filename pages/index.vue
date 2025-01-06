@@ -217,9 +217,9 @@ h3 a {
     main p {
     text-align: left;
     }
-    /* .iconlist .icon {
-        text-align: center;
-    } */
+    .iconlist .icon {
+        margin: auto;
+    }
     .YouTube p {
         margin-left: 0;
     }

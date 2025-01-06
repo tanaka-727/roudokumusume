@@ -226,12 +226,26 @@ main {
     margin-right: 10px;
     background-color: #fffbef;
     height: fit-content;
-    /* aspect-ratio: 16/9; */
 }
-/* .YouTubeitem iframe {
-  width: 100%;
-  height: 100%;
-} */
+@media screen and (max-width:1060px),print {
+  .YouTubeitem {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  .YouTubeitem iframe {
+    margin: 10px;
+		width: calc((100% - 40px) / 2);
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+}
+@media screen and (max-width:992px) {
+   main p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 @media screen and (max-width:768px) {
   main {
     padding-top: 70px;
@@ -244,28 +258,12 @@ main {
   }
   .YouTubeitem {
     flex-direction: column;
-    /* margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: #fffbef;
-    height: fit-content; */
-  }
-}
-@media screen and (max-width:992px) {
-   main p {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-@media screen and (max-width:1060px),print {
-  .YouTubeitem {
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: fit-content;
+    gap: 30px;
   }
   .YouTubeitem iframe {
-    margin: 10px;
-		width: calc((100% - 40px) / 2);
+    margin: auto;
+		width: 90%;
+    height: 100%;
   }
 }
 </style>
