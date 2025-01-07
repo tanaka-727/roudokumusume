@@ -30,7 +30,19 @@
          <section class="joutyuunarratorList">
             <h3 class="category">常駐ナレーター</h3>
 
-            <h4>元気系Voice</h4>
+            <h4>- かわいい系Voice -</h4>
+            <div class="cuteMember">
+               <div v-for="member of cute" :style="`background-color: ${member.memberColor}; border:10px solid ${member.memberColor}; border-radius:25% 10%;`" class="member__link">
+               <nuxt-link :to="`/member/${member.id}`">
+               <img :src="member.bustupPhoto.url" alt="" srcset="">
+               <h3 class="text">{{ member.name }}</h3>
+               <div v-html="member.job" class="text"></div>
+               <audio controls :src="member.voiceSample"></audio>
+               </nuxt-link>
+             </div>
+            </div>
+
+            <h4>- 元気系Voice -</h4>
             <div class="fineMember">
                <div v-for="member of fine" :style="`background-color: ${member.memberColor}; border:10px solid ${member.memberColor}; border-radius:25% 10%;`" class="member__link">
                <nuxt-link :to="`/member/${member.id}`">
@@ -39,10 +51,10 @@
                   <div v-html="member.job" class="text"></div>
                   <audio controls :src="member.voiceSample"></audio>
                </nuxt-link>
-            </div>
+               </div>
             </div>
 
-            <h4>落ち着き系Voice</h4>
+            <h4>- 落ち着き系Voice -</h4>
             <div class="coolMember">
                <div v-for="member of cool" :style="`background-color: ${member.memberColor}; border:10px solid ${member.memberColor}; border-radius:25% 10%;`" class="member__link">
                <nuxt-link :to="`/member/${member.id}`">
@@ -54,7 +66,7 @@
                </div>
             </div>
 
-            <h4>癒し系Voice</h4>
+            <h4>- 癒し系Voice -</h4>
             <div class="healingMember">
                <div v-for="member of healing" :style="`background-color: ${member.memberColor}; border:10px solid ${member.memberColor}; border-radius:25% 10%;`" class="member__link">
                <nuxt-link :to="`/member/${member.id}`">
@@ -64,18 +76,6 @@
                <audio controls :src="member.voiceSample"></audio>
                </nuxt-link>
                </div>
-            </div>
-
-            <h4>かわいい系Voice</h4>
-            <div class="cuteMember">
-               <div v-for="member of cute" :style="`background-color: ${member.memberColor}; border:10px solid ${member.memberColor}; border-radius:25% 10%;`" class="member__link">
-               <nuxt-link :to="`/member/${member.id}`">
-               <img :src="member.bustupPhoto.url" alt="" srcset="">
-               <h3 class="text">{{ member.name }}</h3>
-               <div v-html="member.job" class="text"></div>
-               <audio controls :src="member.voiceSample"></audio>
-               </nuxt-link>
-             </div>
             </div>
 
          </section>
@@ -117,6 +117,11 @@ const healing = data.value.contents.filter(content => content.category[0] == "�
 }
 .fullMember section {
    background-color: #fffbef;
+}
+.fullMember h4 {
+   color: #fff;
+  font-size: 25px !important;
+  text-shadow: 2px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
  .announcerMember, .fineMember, .cuteMember, .coolMember, .healingMember {
    display: flex;

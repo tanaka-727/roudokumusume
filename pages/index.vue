@@ -199,6 +199,7 @@ iframe {
 h3 a {
     text-decoration: none;
     color: #000;
+    margin-right: 5px;
 }
 @media screen and (max-width:768px) {
     .topimage {
@@ -216,9 +217,6 @@ h3 a {
     }
     main p {
     text-align: left;
-    }
-    .iconlist .icon {
-        margin: auto;
     }
     .YouTube p {
         margin-left: 0;

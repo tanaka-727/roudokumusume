@@ -13,12 +13,21 @@
         </main>
         <section class="picup">
             <h2 class="title">PicUp目次</h2>
-            <p>※すべてのお知らせや詳細はスクロールしてご覧になれます。</p>
+            <p>※すべてのお知らせや詳細はスクロールしてご覧いただけます。</p>
+            <div class="news2025">
+                <h3><a href=#news2025>～2025年～</a></h3>
+                <dl>
+                    <dt>◆2025年1月1日</dt>
+                    <dd><a href="#akaitori">朗読むすめからのお年玉！「赤い鳥」朗読復刻</a></dd>
+                </dl>
+            </div>
             <div class="news2024">
                 <h3><a href=#news2024>～2024年～</a></h3>
                 <dl>
                     <dt>◆2024年9月22日</dt>
                     <dd><a href="#channel10000">YouTube「かなや放送と朗読むすめ 」チャンネル登録者10,000人突破！</a></dd>
+                    <dt>◆2024年9月18日</dt>
+                    <dd><a href="#2024itimonnittou">ベストセラー『日本史一問一答【完全版】』に朗読むすめの音声が搭載</a></dd>
                     <dt>◆2024年9月10日</dt>
                     <dd><a href="#narratorStudio">ナレーター常駐スタジオをオープン</a></dd>
                     <dt>◆2024年8月6日</dt>
@@ -66,12 +75,21 @@
             <h2 class="title">News一覧</h2>
             <p class="atend">上から順に最新情報をお届けいたします！</p>
 
+            <dl class="newsList2025">
+                <h3 id="news2025">～2025年～</h3>
+
+                <dt id="akaitori">2025年1月1日　<span class="br"> 「赤い鳥」朗読復刻</span></dt>
+                <dd>朗読むすめからのお年玉！元日から「赤い鳥」創刊号を完全復刻朗読。</dd>
+                <dd class="youtube__box"><iframe width="560" height="315" src="https://www.youtube.com/embed/i926aeLhWFI?si=0Bkco-V34Dmbx5zJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></dd>
+            </dl>
+
             <dl class="newsList2024">
                 <h3 id="news2024">～2024年～</h3>
 
                 <dt>2024年12月6日　<span class="br"> 全編朗読「星の王子さま　あのときの王子くん」公開</span></dt>
                 <dd>青木めぐ演出のもと、メンバー全員出演の朗読作品。全27話公開！</dd>
-                <dd class="youtube__box"><iframe width="560" height="315" src="https://www.youtube.com/embed/6HfazoZNm8g?si=Ybjsn649yU2NVd0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></dd>
+                <dd class="youtube__box">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1Enj9XEo53Y?si=ajgBgbB2sNW7NRrz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></dd>
 
                 <dt>2024年11月27日　メンバーシップ開始</dt>
                 <dd>YouTubeにて、聞き流し動画の広告なしバージョンや未公開動画・公開期間終了動画を公開するメンバーシップを開始。</dd>
@@ -93,7 +111,7 @@
                 <dd>9/30(月)21:00〜22:00にはお祝いライブ配信を開催</dd>
                 <dd class="youtube__box"><iframe width="560" height="315" src="https://www.youtube.com/embed/qCVB3Ol0Q3M?si=wCkSIaKVuuItdKwv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></dd>
 
-                <dt>2024年9月18日　<span class="br">東進ブックス『日本史一問一答【完全版】3rd edition』書籍付属音声</span></dt>
+                <dt id="2024itimonnittou">2024年9月18日　<span class="br">東進ブックス『日本史一問一答【完全版】3rd edition』書籍付属音声</span></dt>
                 <dd>発売から1週間で緊急重版決定！高校学参全国総合1位を獲得。404ページには朗読むすめの紹介も！<br>
                 出演：青木めぐ、石井るい、曽根さとみ、辻紗樹、蓮実アレン、松尾有紀、三浦菜摘、守谷藍<br>
                 美波花音、山城絢奈、湯本佳月、萬海歌</dd>
@@ -343,12 +361,12 @@ news一覧
     margin-top: 0;
     margin-bottom: 10px;
 }
-/* 2024~2021共通 */
-#news2024, #news2023, #news2022, #news2021 {
+/* 20255~2021共通 */
+#news2025, #news2024, #news2023, #news2022, #news2021 {
     padding-top: 100px; /* 調整したい高さ（固定ヘッダーの高さ） */
     margin-top: -100px; /* heightと同じ分のネガティブマージン */
 }
-.newsList2024, .newsList2023, .newsList2022, .newsList2021 {
+.newsList2025, .newsList2024, .newsList2023, .newsList2022, .newsList2021 {
     padding-top: 50px;
 }
 .youtube__box {
@@ -384,10 +402,6 @@ news一覧
     main p {
         padding-left: 20px;
         padding-right: 20px;
-    }
-    .picup p {
-        padding-left: 30px;
-        padding-right: 30px;
     }
     .br {
         display: block;

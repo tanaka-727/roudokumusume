@@ -6,7 +6,7 @@
                 <li><nuxt-link :to="`/`">
                     <img src="/images/logo.png" alt="朗読むすめロゴ" class="logo">
                 </nuxt-link></li>
-                 <li><a href="https://roudo9.com/studio/index.html"><img src="/images/Mike.png" alt="マイクのアイコン" class="icon">Studio</a></li>
+                 <li><nuxt-link :to="`/studio/`"><img src="/images/Mike.png" alt="マイクのアイコン" class="icon">Studio</nuxt-link></li>
                  <li><nuxt-link :to="`/Member/`"><img src="/images/Member.png" alt="メンバーのアイコン" class="icon">Member</nuxt-link></li>
                  <li><nuxt-link :to="`/youtube`"><img src="/images/YouTube.png" alt="Youtubeのアイコン" class="icon">YouTube</nuxt-link></li>
                  <li><nuxt-link :to="`/news`"><img src="/images/News.png" alt="ニュースのアイコン" class="icon">News</nuxt-link></li>
