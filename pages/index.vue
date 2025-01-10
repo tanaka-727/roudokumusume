@@ -1,7 +1,7 @@
 <!-- トップページ -->
 <template>
         <div class="scroll">
-            <h1><img src="/images/topimage.jpg" alt="朗読むすめメンバー集合写真" class="topimage"/></h1>
+            <h1><img src="/images/topimage .jpg" alt="朗読むすめメンバー集合写真" class="topimage"/></h1>
             <!-- メイン（about） -->
             <main>
                 <h2 class="title">About</h2>
