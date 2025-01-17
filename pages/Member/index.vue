@@ -14,7 +14,7 @@
     </main>
       <div class="fullMember">
          <section class="announcerList">
-            <h3 class="category">アナウンサー</h3>
+            <h3 class="category"> アナウンサー </h3>
             <div class="announcerMember">
                <div v-for="member of announcer" :style="`background-color: ${member.memberColor}; border:10px solid ${member.memberColor}; border-radius:25% 10%;`" class="member__link">
                <nuxt-link :to="`/member/${member.id}`">
@@ -28,7 +28,7 @@
          </section>
 
          <section class="joutyuunarratorList">
-            <h3 class="category">常駐ナレーター</h3>
+            <h3 class="category"> 常駐ナレーター </h3>
 
             <h4>- かわいい系Voice -</h4>
             <div class="cuteMember">
@@ -152,6 +152,7 @@ const healing = data.value.contents.filter(content => content.category[0] == "�
    text-align: center;
    color: #d45d5d;
    font-size: 23px;
+   font-family: "arial black";
 }
 h4 {
    padding-top: 20px;

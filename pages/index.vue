@@ -89,6 +89,8 @@ body {
     text-align: center;
     margin: 0;
     padding-top: 40px;
+    font-size: 30px;
+    font-family: "arial black" ,Helvetica, sans-serif;
 }
 /* トップイメージ */
 .topimage {
@@ -214,6 +216,7 @@ h3 a {
     }
     .title {
     padding-top: 20px;
+    font-size: 24px;
     }
     main p {
     text-align: left;

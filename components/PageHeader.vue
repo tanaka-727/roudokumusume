@@ -25,6 +25,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:'Georgia';
 }
 .header {
     display: block;
@@ -73,6 +74,9 @@ nav ul li:has(a .logo){
     padding: 0;
 }
 @media screen and (max-width:768px),print {
+    * {
+        font-weight:bold;
+    }
     .logo {
     width: 70px;
     height: 70px;
