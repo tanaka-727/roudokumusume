@@ -123,6 +123,9 @@ const healing = data.value.contents.filter(content => content.category[0] == "ç™
   font-size: 25px !important;
   text-shadow: 2px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
+.fullMember h3 {
+   font-family: "Zen Maru Gothic";
+}
  .announcerMember, .fineMember, .cuteMember, .coolMember, .healingMember {
    display: flex;
    gap: 30px;
