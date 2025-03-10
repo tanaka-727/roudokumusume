@@ -135,7 +135,7 @@ const healing = data.value.contents.filter(content => content.category[0] == "�
  .member__link {
    width: calc(100% / 3);
  }
- .cuteMember .member__link {
+ .fineMember .member__link, .cuteMember .member__link {
    width: calc((100% - 120px) / 3);
  }
  /* 写真 */
@@ -207,7 +207,7 @@ audio {
       width: calc(80% / 2);
       margin: auto;
    }
-   .cuteMember .member__link {
+   .fineMember .member__link, .cuteMember .member__link {
       width: calc(80% / 2);
       margin: auto;
    }
@@ -243,7 +243,7 @@ audio {
       width: 80%;
       margin: auto;
    }
-     .cuteMember .member__link {
+   .fineMember .member__link, .cuteMember .member__link {
    width: calc((100% - 90px));
    }
 }
