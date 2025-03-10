@@ -103,7 +103,7 @@
 
                 <dt>2024年11月7日　<span class="br">文英堂『共通テストはこれだけ！日本史』書籍付属音声</span></dt>
                 <dd>書籍内「これだけ！ボイス」にて音声収録参加。<br>
-                出演：青木めぐ、三浦菜摘、美波花音、辻紗樹、石井るい、湯本佳月、萬海歌、守谷藍、山城絢奈、松尾有紀、蓮実アレン</dd>
+                出演：青木めぐ、三浦菜摘、美波花音、辻紗樹、石井るい、湯本佳月、萬海歌、守谷藍、山城絢奈、松尾有紀、</dd>
 
                 <dt>2024年11月3日　朗読むすめ3周年</dt>
 
@@ -113,7 +113,7 @@
 
                 <dt id="2024itimonnittou">2024年9月18日　<span class="br">東進ブックス『日本史一問一答【完全版】3rd edition』書籍付属音声</span></dt>
                 <dd>発売から1週間で緊急重版決定！高校学参全国総合1位を獲得。404ページには朗読むすめの紹介も！<br>
-                出演：青木めぐ、石井るい、曽根さとみ、辻紗樹、蓮実アレン、松尾有紀、三浦菜摘、守谷藍<br>
+                出演：青木めぐ、石井るい、曽根さとみ、辻紗樹、松尾有紀、三浦菜摘、守谷藍<br>
                 美波花音、山城絢奈、湯本佳月、萬海歌</dd>
 
                 <dt id="narratorStudio">2024年9月10日　<span class="br">【ナレーター常駐スタジオをオープン】</span></dt>
@@ -215,21 +215,21 @@
                 <dt id="hataagekouen">2022年5月5日　旗揚げ公演　上演！</dt>
                 <dd>「劇団朗読むすめ」旗揚げ公演を新宿文化センターにて上演。<br>
                     樋口一葉生誕150周年記念事業「大つごもり」/「オペラの名場面を朗読で」　をお届けしました。<br>
-                    出演：田辺桃菜、松尾有紀、山城絢奈、蓮実アレン、曽根さとみ、堀宮菜々子、青木めぐ、萬海歌、湯本佳月、美波花音</dd>
+                    出演：田辺桃菜、松尾有紀、山城絢奈、曽根さとみ、堀宮菜々子、青木めぐ、萬海歌、湯本佳月、美波花音</dd>
                  <dd><img src="/images/hataagekouenn.jpg" alt="劇団朗読むすめチラシ" class="hataageimg"><img src="/images/hataageflier.jpg" alt="劇団朗読むすめフライヤー" class="hataageimg"><img src="/images/hataageenmoku.jpg" alt="劇団朗読むすめ演目" class="hataageimg"></dd>
 
                 <dt>2022年4月30日　<span class="br">文化放送「村上信五クンと経済くん」にて応援ソング「君の夢を」が紹介されました！</span></dt>
-                <dd>出演：山城絢奈、曽根さとみ、蓮実アレン、青木めぐ、湯本佳月、萬海歌</dd>
+                <dd>出演：山城絢奈、曽根さとみ、青木めぐ、湯本佳月、萬海歌</dd>
 
                 <dt id="audiobook">2022年4月27日　オーディオブックデビュー！</dt>
                 <dd>ワ二ブックス『２倍速で読めて、忘れない　速読日本史』<br>
                 11時間近い朗読音声を収録しました。Audible（amazon）とiTunesで発売。<br>
-                出演：山城絢奈、曽根さとみ、蓮実アレン、青木めぐ、美波花音、湯本佳月</dd>
+                出演：山城絢奈、曽根さとみ、青木めぐ、美波花音、湯本佳月</dd>
 
                 <dt id="youtube27">2022年4月16日　<span class="br">「本家本元！日本史一問一答」全27巻 公開</span></dt>
                 <dd>金谷俊一郎先生監修の日本史一問一答聞き流し動画を、金谷俊一郎講師生活30周年の最終日に公開！<br>
                 皆さんへの30年の恩返しの総決算としてリリースされました。<br>
-                出演：田辺桃菜、山城絢奈、堀宮菜々子、曽根さとみ、蓮実アレン、松尾有紀、青木めぐ、美波花音、湯本佳月、萬海歌<br>
+                出演：田辺桃菜、山城絢奈、堀宮菜々子、曽根さとみ、松尾有紀、青木めぐ、美波花音、湯本佳月、萬海歌<br>
                 ※2024年9月現在、再生回数150万回を突破する人気コンテンツとなっております！</dd>
                 <dd class="youtube__box"><iframe width="560" height="315" src="https://www.youtube.com/embed/vktWEUfOVW4?si=D7OOZ0E14dcjaCg-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></dd>
 
@@ -242,7 +242,7 @@
 
                 <dt>2022年1月15日　共通テスト直前激励メッセージをお届け</dt>
                 <dd>朗読むすめメンバーから、受験生に向けた応援メッセージをYouTubeにて公開しました。<br>
-                出演：田辺桃菜、山城絢奈、堀宮菜々子、曽根さとみ、蓮実アレン、松尾有紀、青木めぐ、美波花音、湯本佳月</dd>
+                出演：田辺桃菜、山城絢奈、堀宮菜々子、曽根さとみ、松尾有紀、青木めぐ、美波花音、湯本佳月</dd>
                 <dd class="youtube__box"><iframe width="560" height="315" src="https://www.youtube.com/embed/yUXAxD-UTcw?si=RVjCtTrUDJwKyJTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></dd>
 
                 <dt>2022年1月8日　<span class="br">紀伊國屋書店新宿店にてフォトフレーム展開</span></dt>
@@ -254,7 +254,7 @@
                 <h3 id="news2021">～2021年～</h3>
 
                 <dt>2021年11月24日　<span class="br">『もし幕末に広報がいたら』(日経ＢＰ)ＰＲ動画　公開</span></dt>
-                <dd>本能寺の変の記者会見のシーンを再現しました。この時のメンバーの演技の上手さから、「朗読むすめ旗揚げ公演」<br>の流れが生まれました。　　出演：曽根さとみ、蓮実アレン、青木めぐ、田辺桃菜</dd>
+                <dd>本能寺の変の記者会見のシーンを再現しました。この時のメンバーの演技の上手さから、「朗読むすめ旗揚げ公演」<br>の流れが生まれました。　　出演：曽根さとみ、青木めぐ、田辺桃菜</dd>
                 <dd class="youtube__box"><iframe width="560" height="315" src="https://www.youtube.com/embed/qz6lAqpsPTg?si=KykCYES0MllxL0ES" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></dd>
 
                 <dt id="kiminoyumewo">2021年11月20日　受験生応援ソング 「君の夢を」 お披露目</dt>
@@ -266,7 +266,7 @@
 
                 <dt>2021年11月3日　メンバー発表</dt>
                 <dd>「かなや放送オンライン」（YouTube）で発表！<br>
-                出演：田辺桃菜、山城絢奈、曽根さとみ、堀宮菜々子、蓮実アレン、松尾有紀、青木めぐ</dd>
+                出演：田辺桃菜、山城絢奈、曽根さとみ、堀宮菜々子、松尾有紀、青木めぐ</dd>
 
                 <dt>2021年9月～10月　研修、宣材撮影、初収録</dt>
                 <dd>金谷俊一郎先生の生授業見学などを行いました。Sutudio Luff さんで宣材写真を撮影しました。</dd>
