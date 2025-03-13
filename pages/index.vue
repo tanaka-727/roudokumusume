@@ -1,7 +1,7 @@
 <!-- トップページ -->
 <template>
         <div class="scroll">
-            <h1><img src="/images/topimage .jpg" alt="朗読むすめメンバー集合写真" class="topimage"/></h1>
+            <h1><img src="/images/topimage .jpg" alt="朗読むすめメンバー集合写真 田辺桃菜、辻紗樹、三浦菜摘、美波花音、山城綺奈、湯本佳月、曽根さとみ、石井るい。堀宮菜々子、守谷藍、青木めぐ、松尾有紀、萬海歌" class="topimage"/></h1>
             <!-- メイン（about） -->
             <main>
                 <h2 class="title">About</h2>
