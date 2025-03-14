@@ -252,3 +252,9 @@ padding-bottom: 20px;
     }
 }
 </style>
+
+<script setup>
+useHead({
+    title: "朗読部屋Studio | 朗読むすめ",
+})
+</script>

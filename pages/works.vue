@@ -162,3 +162,9 @@ main {
     }
 }
 </style>
+
+<script setup>
+useHead({
+    title: "これまでのお仕事 | 朗読むすめ",
+})
+</script>

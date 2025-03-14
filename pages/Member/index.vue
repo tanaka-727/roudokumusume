@@ -93,6 +93,10 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+   title: "メンバー紹介 | 朗読むすめ",
+})
+
 const runtimeConfig = useRuntimeConfig();
 
 const { data } = await useFetch(`https://${runtimeConfig.public.serviceDomain}.microcms.io/api/v1/member?limit=100`,{

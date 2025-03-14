@@ -44,6 +44,10 @@
 
 <!-- スクリプト -->
 <script setup>
+useHead({
+    title: "メンバープロフィール | 朗読むすめ",
+})
+
 const route = useRoute();
 const id = route.params.id;
 

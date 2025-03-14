@@ -267,3 +267,9 @@ main {
   }
 }
 </style>
+
+<script setup>
+useHead({
+    title: "YouTube | 朗読むすめ",
+})
+</script>

@@ -231,3 +231,12 @@ h3 a {
     }
 }
 </style>
+
+<script setup>
+useHead({
+    title: "朗読むすめ",
+    meta:[
+        {name:"description",content:"トップページ"}
+    ]
+})
+</script>

@@ -447,3 +447,9 @@ news一覧
     }
 }
 </style>
+
+<script setup>
+useHead({
+    title: "ニュース | 朗読むすめ",
+})
+</script>
